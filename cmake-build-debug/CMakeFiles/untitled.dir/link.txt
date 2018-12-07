@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/untitled.dir/main.cpp.o CMakeFiles/untitled.dir/CKnapsackProblem.cpp.o CMakeFiles/untitled.dir/CIndividual.cpp.o CMakeFiles/untitled.dir/CItem.cpp.o CMakeFiles/untitled.dir/CGeneticAlgorithm.cpp.o  -o untitled 
