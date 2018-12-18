@@ -37,7 +37,7 @@ CIndividual::CIndividual(CIndividual &toCopy) {
 
 CIndividual::~CIndividual() {
     delete genotyp;
-    //cout<<"Detruktor individuala"<<endl;
+
 }
 
 
@@ -89,15 +89,13 @@ void CIndividual::mutate(int mutacja) {
         int wylosowanaSzansa=dist6(rng);
         if(wylosowanaSzansa<=mutacja){
             if(genotyp->at(i)==1){
-                //cout<<"Zaszla mutacja z 1 na 0 na pozycji: ";
-               // cout<<i<<endl;                                   //TODO Delete
+
                 genotyp->at(i)=0;
             }else{
-               // cout<<"Zaszla mutacja z 0 na 1 na pozycji: ";
-               // cout<<i<<endl;                                   //TODO Delete
+
                 genotyp->at(i)=1;
             }
-            //countFitness();
+
         }
     }
 }
@@ -126,7 +124,10 @@ vector<CIndividual *> *CIndividual::crossOver(CIndividual &other) {
     toReturn->push_back(first);
     toReturn->push_back(second);
 
-    //cout<<crossPlace<<endl; //TODO DELETE
+
     return toReturn;
 
 }
+
+
+

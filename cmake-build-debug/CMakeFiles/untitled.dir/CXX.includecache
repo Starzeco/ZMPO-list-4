@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/marcel/CLionProjects/untitled/CGeneticAlgorithm.cpp
+CGeneticAlgorithm.h
+/home/marcel/CLionProjects/untitled/CGeneticAlgorithm.h
+iostream
+-
+string
+-
+random
+-
+
 /home/marcel/CLionProjects/untitled/CGeneticAlgorithm.h
 iostream
 -
@@ -39,12 +49,4 @@ vector
 -
 CItem.h
 /home/marcel/CLionProjects/untitled/CItem.h
-
-/home/marcel/CLionProjects/untitled/main.cpp
-iostream
--
-CIndividual.h
-/home/marcel/CLionProjects/untitled/CIndividual.h
-CGeneticAlgorithm.h
-/home/marcel/CLionProjects/untitled/CGeneticAlgorithm.h
 

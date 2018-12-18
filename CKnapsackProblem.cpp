@@ -20,11 +20,7 @@ CKnapsackProblem::CKnapsackProblem(vector<CItem *> &list, double rozmiarPlecaka)
 
 
 CKnapsackProblem::~CKnapsackProblem() {
-    /*for(int i=0;i<itemList.size();i++){
-        delete itemList[i];
-    }
 
-    itemList->clear();*/
 
 }
 
@@ -32,11 +28,8 @@ void CKnapsackProblem::deCodeGenotype(vector<int> &genotype) {
 
     for(int i=0;i<genotype.size();i++){
         if(genotype.at(i)==1){
-           /* cout<<itemList->at(i)->getNazwa()+" o wartosci: ";
-            cout<<itemList->at(i)->getWartosc();
-            cout<<" i wadze: ";
-            cout<<itemList->at(i)->getWaga();*/
-           itemList->at(i)->toString();
+            (*itemList)[i]->toString();
+
            cout<<""<<endl;
         }
     }

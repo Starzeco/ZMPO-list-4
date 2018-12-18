@@ -79,6 +79,12 @@ void CGeneticAlgorithm::run(int operations) {
         population=newPopulation;
 
     }
+    for(int p=0;p<population->size();p++){
+        delete (*population)[p];
+
+    }
+    delete population;
+
 
 }
 
@@ -120,5 +126,14 @@ CIndividual &CGeneticAlgorithm::findParent(vector<CIndividual *> *vector) {
 }
 
 void CGeneticAlgorithm::wyswietlNajlepszego() {
-    best->showGenotyp();
+
+    for(int i=0;i<problem->getItemList()->size();i++){
+        if(best->getGenotyp().at(i)==1){
+            cout<<problem->getItemList()->at(i)->getNazwa()+" ma wagę: ";
+            cout<<problem->getItemList()->at(i)->getWaga();
+            cout<<" i wartosc: ";
+            cout<<+problem->getItemList()->at(i)->getWartosc()<<endl;
+        }
+    }
+
 }
